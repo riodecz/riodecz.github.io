@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Site!</title>
+        <title>
+            Blink tag HTML with CSS animations
+        </title>
+        <style>
+            .blink {
+                animation: blink 3s infinite;
+                }
+
+                @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0;
+                    transform: scale(2);
+                }
+                51% {
+                    opacity: 0;
+                    transform: scale(0);
+                }
+                100% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+            .hw{
+                color:rgb(240, 127, 255);
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        <h1>This is my Github Pages Website</h1>
+        <h1><p class="hw">
+            <span class="blink" >Hello, </span>World!
+        </p></h1>
     </body>
 </html>
